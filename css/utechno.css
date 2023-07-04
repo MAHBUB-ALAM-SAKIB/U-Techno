@@ -1,0 +1,199 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#navbar{
+    display: inline-block;
+    right: 0px;
+    top: 0px;
+   /* justify-content:center; */
+   position: fixed;
+   /* border: 1px solid greenyellow; */
+   /* background-color: antiquewhite; */
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.1;
+}
+#logo{
+    margin: 1px 1px;
+}
+#logo img{
+    height: 75px;
+    margin: 0px 0px;
+    position: fixed;
+}
+#navbar ul{
+    display: flex;
+    justify-content: center;
+    
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+    
+}
+#navbar ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color:#181817;
+    padding: 15px 35px;
+
+}
+#navbar ul li a:hover{
+   color: aqua;
+   /* background-color: black; */
+
+}
+#navbar-item{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1px 5px;
+}
+#ms img{
+   height: 40px;
+   padding: 1px 5px;
+   opacity: 0.8;
+   /* filter: invert(100%); */
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 640px;
+    padding: 4px 250px;
+    align-items: center;
+    justify-content: center;
+}
+#home::before{
+    content: "";
+    background: url('../img/bg2.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    height:100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.88;
+
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+ }
+ #home p{
+    color: white;
+    text-align: center;
+    font-size:1.2rem ;
+    
+ }
+ .btn{
+    background-color: aquamarine;
+    padding: 2px 4px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 10px;
+    font-size: 1.2rem;
+ }
+ #services{
+    display: flex;
+    margin: 15px;
+    
+ }
+ #services .box{
+    border: 2px solid green;
+    margin: 4px 23px;
+    padding: 2px 2px;
+    border-radius: 20px;
+    background-color: blanchedalmond;
+ }
+ #services .box img{
+    height: 200px;
+    display: flex;
+    margin :auto;
+ }
+ .h-primary{
+    font-size: 2rem;
+    padding: 20px;
+ }
+ .h-secondary{
+    font-size: 2rem;
+    padding: 20px;
+ }
+ .center{
+    text-align: center;
+ }
+
+ #client-container{
+    position: relative;
+ }
+ #client-container::before{
+    content: "";
+    background: url('../img/bg3.jpg')no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+ }
+ #clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ #clients img{
+    height: 100px;
+    margin: 29px;
+    
+ }
+#client-items{
+    padding: 15px;
+ }
+ #lol{
+    filter: invert(100%);
+ }
+.registration{
+   position: relative;
+ }
+.registration::before{
+   content: "";
+   background: url('../img/register2.webp') no-repeat center center/cover;
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   z-index: -1;
+   opacity: 0.8;
+   }
+#registration-box{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 10px;
+   }
+ .form-group{
+   padding: 9px;
+ }
+ .button{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ .bn{
+  display:inline-block;
+   background-color: aquamarine;
+    padding: 2px 4px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 10px
+ }
+ footer{
+   background-color: black;
+   color: white;
+   padding: 5px 15px;
+ }
